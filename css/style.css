@@ -759,6 +759,11 @@ md-toolbar:not(.md-hue-1),
     fill: #fff;
 }
 
+md-sidenav > md-toolbar {
+    height:64px;
+    z-index: 61;
+}
+
 md-sidenav {
     fill: #737373;
 }
@@ -768,14 +773,17 @@ md-sidenav ng-md-icon {
     top: 5px;
 }
 
+
 .user-avatar {
     border-radius: 99%;
 }
 
 .map {
-    /*height: calc(100% - 244px);*/
     height: 500px;
     margin: 0px 10px 0px 10px;
 }
+
+
+
 
 

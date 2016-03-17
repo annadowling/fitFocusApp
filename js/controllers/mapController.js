@@ -1,6 +1,6 @@
-/**
- * Created by annadowling on 17/03/2016.
- */
+///**
+// * Created by annadowling on 17/03/2016.
+// */
     fitFocusApp.config(iconConfiguration);
     fitFocusApp.controller('PrincipalController', ['$scope', '$mdToast', PrincipalController]);
 
@@ -111,3 +111,4 @@
             simpleToastBase(message, 'top right', 6000, 'X');
         }
     };
+
