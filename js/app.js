@@ -52,7 +52,16 @@ fitFocusApp.config(['$routeProvider', function ($routeProvider) {
                 } //current Auth
             } //resolve
         }).
-    otherwise({
+        when('/map',
+            {
+                templateUrl: 'views/map.html',
+                controller: 'PrincipalController',
+                resolve: {
+                    currentAuth: function (Authentication) {
+                        return Authentication.requireAuth();
+                    } //current Auth
+                } //resolve
+            }).otherwise({
         redirectTo: '/login'
     });
 }]);
