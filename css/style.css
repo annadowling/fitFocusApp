@@ -733,6 +733,7 @@ md-content.md-default-theme {
 md-card {
     background-color: #fff;
 }
+
 md-card h2:first-of-type {
     margin-top: 0;
 }
@@ -748,6 +749,7 @@ h2 {
 .md-toolbar-tools-bottom {
     font-size: small;
 }
+
 .md-toolbar-tools-bottom :last-child {
     opacity: 0.8;
 }
@@ -760,6 +762,7 @@ md-toolbar:not(.md-hue-1),
 md-sidenav {
     fill: #737373;
 }
+
 md-sidenav ng-md-icon {
     position: relative;
     top: 5px;

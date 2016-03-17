@@ -26,7 +26,7 @@ fitFocusApp.config(['$routeProvider', function ($routeProvider) {
     }).
     when('/dashboard', {
         templateUrl: 'views/dashboard.html',
-        controller: 'dashBoardController',
+        controller: 'RegistrationController',
         resolve: {
             currentAuth: function (Authentication) {
                 return Authentication.requireAuth();

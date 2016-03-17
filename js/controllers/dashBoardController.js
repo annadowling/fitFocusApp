@@ -4,17 +4,21 @@ fitFocusApp.controller('dashBoardController', ['$scope', '$mdBottomSheet','$mdSi
     };
     $scope.menu = [
         {
-            link : 'posts/comments.html',
+            link : '#/posts',
             title: 'Top Classes'
         },
         {
-            link : 'views/comments.html',
+            link : '#/posts/:post_id/comments',
             title: 'Comments'
         },
        {
-        link : '',
+        link : '#/map',
         title: 'Class Location'
-       }
+       },
+        {
+            link : '#/login',
+            title: 'Logout'
+        }
 
     ];
 

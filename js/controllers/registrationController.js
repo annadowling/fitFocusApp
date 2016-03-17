@@ -1,6 +1,6 @@
 fitFocusApp.controller('RegistrationController',
-  ['$scope', 'Authentication',
-  function($scope, Authentication) {
+  ['$scope', 'Authentication', '$mdSidenav',
+  function($scope, Authentication, $mdSidenav) {
   
   $scope.login = function() {
     Authentication.login($scope.user);
@@ -14,4 +14,24 @@ fitFocusApp.controller('RegistrationController',
     Authentication.register($scope.user);
   }; // register
 
+    $scope.toggleSidenav = function(menuId) {
+      $mdSidenav(menuId).toggle();
+    };
+    $scope.menu = [
+      {
+        link : '#/posts',
+        title: 'Top Classes'
+      },
+      {
+        link : '#/posts/:post_id/comments',
+        title: 'Comments'
+      },
+      {
+        link : '#/map',
+        title: 'Class Location'
+      }
+    ];
+
 }]); // Controller
+
+
