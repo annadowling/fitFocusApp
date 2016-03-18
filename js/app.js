@@ -1,5 +1,5 @@
 var fitFocusApp = angular.module('fitFocusApp',
-    ['ngRoute', 'firebase', 'ngMaterial'])
+    ['ngRoute', 'firebase', 'ngMaterial', 'ngMdIcons'])
     .constant('FIREBASE_URL', 'https://fitfocusapp.firebaseio.com/');
 
 

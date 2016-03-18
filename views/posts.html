@@ -1,6 +1,7 @@
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <div layout="column" class="relative" layout-fill role="main">
     <md-button class="md-fab md-fab-bottom-right" aria-label="Add" ng-click="showAdd($event)">
-        <ng-md-icon icon="add"></ng-md-icon>
+        <ng-md-icon icon="add" size="50"></ng-md-icon>
     </md-button>
     <md-toolbar>
         <div class="md-toolbar-tools">
@@ -8,6 +9,8 @@
                 Fit Focus App
             </h3>
             <span flex></span>
+            <md-button href="#/dashboard">Dashboard</md-button>
+            <md-button href="#/map">Class Location</md-button>
         </div>
         <md-tabs md-stretch-tabs class="md-primary" md-selected="data.selectedIndex">
             <md-tab id="tab1" aria-controls="tab1-content">

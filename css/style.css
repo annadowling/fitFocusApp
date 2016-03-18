@@ -686,6 +686,10 @@ form {
     margin-right: 0;
 }
 
+md-toolbar-tools.md-button{
+    float: right;
+}
+
 .muppet-list .md-button {
     color: inherit;
     text-align: left;

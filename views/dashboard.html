@@ -18,21 +18,19 @@
     </md-toolbar>
     <md-list>
         <md-item ng-repeat="item in menu">
-            <a>
                 <md-item-content md-ink-ripple layout="row" layout-align="start center">
                     <div class="inset">
-                        <ng-md-icon icon="{{item.icon}}"></ng-md-icon>
+                        <ng-md-icon icon="add_circle_outline"></ng-md-icon>
                     </div>
-                    <div class="inset"><a href="{{item.link}}">{{item.title}}</a>
-                    </div>
+                    <md-button href="{{item.link}}">{{item.title}}</md-button>
                 </md-item-content>
-            </a>
         </md-item>
         <div class="inset">
-            <a ng-href="#/login" ng-click="logout()">Logout</a>
+            <ng-md-icon icon="logout" size="30"></ng-md-icon><md-button href="#/login" ng-click="logout()">Logout</md-button>
         </div>
     </md-list>
 </md-sidenav>
+<span flex></span>
 <!--<div layout="column" class="relative" class="main-toolbar md-medium-tall">-->
     <md-toolbar ng-show="!showSearch">
         <div class="md-toolbar-tools">
