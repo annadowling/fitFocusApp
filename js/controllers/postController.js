@@ -4,7 +4,7 @@
 
 fitFocusApp.controller('PostsController', ['$scope', 'PostsService', '$mdDialog',
     function ($scope, PostsService, $mdDialog) {
-        $scope.posts = PostsService.getPosts()
+        $scope.posts = PostsService.getPosts();
         $scope.incrementUpvotes = function (post) {
             post.upvotes += 1;
         };

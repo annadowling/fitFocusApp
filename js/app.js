@@ -42,20 +42,21 @@ fitFocusApp.config(['$routeProvider', function ($routeProvider) {
             } //current Auth
         } //resolve
     }).
-    when('/posts/:post_id/comments',
-        {
-            templateUrl: 'views/comments.html',
-            controller: 'CommentsController',
-            resolve: {
-                currentAuth: function (Authentication) {
-                    return Authentication.requireAuth();
-                } //current Auth
-            } //resolve
-        }).
         when('/map',
             {
                 templateUrl: 'views/map.html',
                 controller: 'PrincipalController',
+                resolve: {
+                    currentAuth: function (Authentication) {
+                        return Authentication.requireAuth();
+                    } //current Auth
+                } //resolve
+            })
+        .
+        when('/forum',
+            {
+                templateUrl: 'views/forum.html',
+                controller: 'ForumController',
                 resolve: {
                     currentAuth: function (Authentication) {
                         return Authentication.requireAuth();

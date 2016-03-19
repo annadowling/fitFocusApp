@@ -1,7 +1,7 @@
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <div layout="column" class="relative" layout-fill role="main">
     <md-button class="md-fab md-fab-bottom-right" aria-label="Add" ng-click="showAdd($event)">
-        <ng-md-icon icon="add" size="50"></ng-md-icon>
+        <ng-md-icon icon="add" size="47"></ng-md-icon>
     </md-button>
     <md-toolbar>
         <div class="md-toolbar-tools">
@@ -10,6 +10,7 @@
             </h3>
             <span flex></span>
             <md-button href="#/dashboard">Dashboard</md-button>
+            <md-button href="#/forum">Forum</md-button>
             <md-button href="#/map">Class Location</md-button>
         </div>
         <md-tabs md-stretch-tabs class="md-primary" md-selected="data.selectedIndex">
@@ -45,7 +46,6 @@
                                             <p>
                                                 <a ng-show="post.link != null" href="{{post.link}}">Visit Page</a>
                                             </p>
-                                            <p><a href="#/posts/:post_id/comments">View Comments</a></p>
                                         </div>
                                     </md-item-content>
                                     <md-divider md-inset hide-sm ng-if="!$last"></md-divider>
@@ -68,8 +68,7 @@
                                             <user-avatar></user-avatar>
                                         </div>
                                         <div class="md-tile-content">
-                                            <span class="glyphicon glyphicon-thumbs-up"
-                                                  ng-click="incrementUpvotes(post)"></span>
+                                            <ng-md-icon icon="thumb_up" ng-click="incrementUpvotes(post)"></ng-md-icon>
                                             {{post.upvotes}}
                                             <h3>{{post.title}}</h3>
                                             <h4>{{post.username}}</h4>
@@ -77,7 +76,6 @@
                                             <p>
                                                 <a ng-show="post.link != null" href="{{post.link}}">Visit Page</a>
                                             </p>
-                                            <p><a href="#/posts/:post_id/comments">View Comments</a></p>
                                         </div>
                                     </md-item-content>
                                     <md-divider md-inset hide-sm ng-if="!$last"></md-divider>

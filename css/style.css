@@ -673,11 +673,11 @@ input.ng-valid.ng-touched {
 }
 
 form {
-    width: 380px;
+    width: 100%;
     margin: 4em auto;
     padding: 3em 2em 2em 2em;
     background: #fafafa;
-    border: 7px solid #1a75ff;
+    border: 7px solid #03a9f4;
     box-shadow: rgba(0, 0, 0, 0.14902) 0px 1px 1px 0px, rgba(0, 0, 0, 0.09804) 0px 1px 2px 0px;
 }
 
@@ -785,6 +785,17 @@ md-sidenav ng-md-icon {
 .map {
     height: 500px;
     margin: 0px 10px 0px 10px;
+}
+
+.material-icons {
+    cursor: pointer;
+}
+ng-md-icon:first-of-type {
+    margin-right: 1rem;
+}
+
+md-list.md-whiteframe-2dp{
+    width: 100%
 }
 
 

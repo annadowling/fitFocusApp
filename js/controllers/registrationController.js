@@ -23,8 +23,8 @@ fitFocusApp.controller('RegistrationController',
         title: 'Top Classes'
       },
       {
-        link : '#/posts/:post_id/comments',
-        title: 'Comments'
+        link : '#forum',
+        title: 'Forum'
       },
       {
         link : '#/map',

@@ -2,26 +2,6 @@ fitFocusApp.controller('dashBoardController', ['$scope', '$mdBottomSheet','$mdSi
     $scope.toggleSidenav = function(menuId) {
         $mdSidenav(menuId).toggle();
     };
-    $scope.menu = [
-        {
-            link : '#/posts',
-            title: 'Top Classes'
-        },
-        {
-            link : '#/posts/:post_id/comments',
-            title: 'Comments'
-        },
-       {
-        link : '#/map',
-        title: 'Class Location'
-       },
-        {
-            link : '#/login',
-            title: 'Logout'
-        }
-
-    ];
-
 
     $scope.alert = '';
     $scope.showListBottomSheet = function($event) {
