@@ -1,0 +1,41 @@
+<md-toolbar>
+    <div class="md-toolbar-tools">
+        <md-icon md-svg-src='./css/svg/heart-beats.svg'></md-icon>
+        <h3><span>Fit Focus</span></h3>
+        <span flex></span>
+        <md-button href="#/dashboard">Dashboard</md-button>
+        <md-button href="#/forum">Forum</md-button>
+        <md-button href="#/posts">Top Classes</md-button>
+        <md-button href="#/map">Class Location</md-button>
+        <md-button ng-controller="RegistrationController" href="#/login" ng-click="logout()">Logout</md-button>
+    </div>
+</md-toolbar>
+<div ng-controller="bookClassController">
+
+    <div class="page-header text-center" align="center">
+        <h1>Book a Class</h1>
+    </div>
+    <div class="row times">
+        <div class="col-xs-4 text-center" ng-repeat="day in days">
+            <h2>{{ day.name }}</h2>
+
+            <div class="time-slot" ng-repeat="slot in day.slots">
+                <md-input-container>
+                    <input type="checkbox" id="{{ day.name }}-{{ $index }}" ng-model="slot.booked"
+                           ng-disabled="slot.booked">
+                </md-input-container>
+                <label for="{{ day.name }}-{{ $index }}">{{ slot.time }}<br>
+                    <span ng-if="slot.booked">Booked</span>
+                    <span ng-if="!slot.booked">Available</span>
+                </label>
+
+            </div>
+        </div>
+
+    </div>
+
+    <p class="text-center">
+        <md-button href="#/bookClass" ng-click="reset()">Reset</md-button>
+    </p>
+
+</div>

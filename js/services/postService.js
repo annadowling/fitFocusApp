@@ -25,7 +25,6 @@ fitFocusApp.factory('PostsService', [function(){
             link: 'http://www.zumbawithadriana.com/p/zumba-classes-waterford.html',
             username: 'zumbaaddict',
             upvotes: 6,
-            comments: [],
             id: 3,
             date: '2016-03-05'
         },

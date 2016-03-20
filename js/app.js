@@ -61,7 +61,18 @@ fitFocusApp.config(['$routeProvider', function ($routeProvider) {
                     return Authentication.requireAuth();
                 } //current Auth
             } //resolve
-        }).otherwise({
+        })
+        .
+        when('/bookClass',
+            {
+                templateUrl: 'views/bookClass.html',
+                controller: 'bookClassController',
+                resolve: {
+                    currentAuth: function (Authentication) {
+                        return Authentication.requireAuth();
+                    } //current Auth
+                } //resolve
+            }).otherwise({
         redirectTo: '/login'
     });
 }]);
