@@ -2,13 +2,13 @@
 // * Created by annadowling on 17/03/2016.
 // */
     fitFocusApp.config(iconConfiguration);
-    fitFocusApp.controller('PrincipalController', ['$scope', '$mdToast', PrincipalController]);
+    fitFocusApp.controller('MapController', ['$scope', '$mdToast', MapController]);
 
     function iconConfiguration($mdIconProvider) {
         $mdIconProvider.defaultIconSet('icons_24x24.svg', 24);
     }
 
-    function PrincipalController($scope, $mdToast) {
+    function MapController($scope, $mdToast) {
         var map;
         var geocoder;
 

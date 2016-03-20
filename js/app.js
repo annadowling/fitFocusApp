@@ -42,27 +42,26 @@ fitFocusApp.config(['$routeProvider', function ($routeProvider) {
             } //current Auth
         } //resolve
     }).
-        when('/map',
-            {
-                templateUrl: 'views/map.html',
-                controller: 'PrincipalController',
-                resolve: {
-                    currentAuth: function (Authentication) {
-                        return Authentication.requireAuth();
-                    } //current Auth
-                } //resolve
-            })
-        .
-        when('/forum',
-            {
-                templateUrl: 'views/forum.html',
-                controller: 'ForumController',
-                resolve: {
-                    currentAuth: function (Authentication) {
-                        return Authentication.requireAuth();
-                    } //current Auth
-                } //resolve
-            }).otherwise({
+    when('/map',
+        {
+            templateUrl: 'views/map.html',
+            controller: 'MapController',
+            resolve: {
+                currentAuth: function (Authentication) {
+                    return Authentication.requireAuth();
+                } //current Auth
+            } //resolve
+        }).
+    when('/forum',
+        {
+            templateUrl: 'views/forum.html',
+            controller: 'ForumController',
+            resolve: {
+                currentAuth: function (Authentication) {
+                    return Authentication.requireAuth();
+                } //current Auth
+            } //resolve
+        }).otherwise({
         redirectTo: '/login'
     });
 }]);

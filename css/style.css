@@ -1,36 +1,6 @@
 /* apply a natural box layout model to all elements, but allowing components to change */
 html {
     box-sizing: border-box;
-}
-
-*, *:before, *:after {
-    box-sizing: inherit;
-}
-
-/* Reset Styles */
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font: inherit;
-    font-size: 100%;
-    vertical-align: baseline;
-}
-
-html {
     line-height: 1;
 }
 
@@ -60,10 +30,6 @@ q:before, q:after, blockquote:before, blockquote:after {
 
 a img {
     border: none;
-}
-
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
-    display: block;
 }
 
 * {
@@ -244,48 +210,6 @@ input[type=radio] {
     background-color: #ff9900;
 }
 
-.btn-list {
-    background-image: url(../images/icons/icon_list.png);
-}
-
-.btn-checkin {
-    background-color: #ffcc99;
-    background-image: url(../images/icons/icon_checkmark.png);
-}
-
-.btn-delete {
-    background-color: #C94C24;
-    background-image: url(../images/icons/icon_trash.png);
-}
-
-.btn-love {
-    background-image: url(../images/icons/icon_heart.png);
-}
-
-.btn-email {
-    background-image: url(../images/icons/icon_email.png);
-}
-
-.btn-meeting {
-    background-image: url(../images/icons/icon_meeting.png);
-}
-
-.btn-pick {
-    background: #2D8BCF url(../images/icons/icon_dice.png) 5px center no-repeat;
-    background-size: 20px 20px;
-    padding: 5px 5px 5px 30px;
-    font-size: .8em;
-    margin: 0 auto;
-}
-
-.btn-reset {
-    background: #CB4B19 url(../images/icons/icon_reset.png) 5px center no-repeat;
-    background-size: 20px 20px;
-    padding: 5px 5px 5px 50px;
-}
-
-/*buttons*/
-
 fieldset {
     margin: 10px 0;
 }
@@ -294,62 +218,6 @@ fieldset {
     margin: 0;
     padding: 0;
     margin-top: 20px;
-}
-
-.search {
-    background: #F5F5F5;
-    width: 100%;
-    margin: 0 auto;
-    margin-top: 10px;
-    padding: 20px 30px;
-    border-radius: 4px;
-    text-align: left;
-    font-size: 1.1rem;
-    font-family: Lato, 'Helvetica Nueue', Helvetica, Arial, sans-serif;
-}
-
-.search h2 {
-    color: #124E61;
-    margin-bottom: 10px;
-}
-
-.search select {
-    font-size: 1rem;
-    padding: 10px 0 10px 15px;
-    color: #475B62;
-    background: rgba(255, 255, 255, 0.4);
-    border: 1px solid rgba(0, 0, 0, 0.3);
-}
-
-.search input[type="text"] {
-    margin-bottom: 10px;
-}
-
-.search input[type="checkbox"] {
-    display: inline;
-    background-color: #ddd;
-    border: 1px solid #C5C5C5;
-    display: inline-block;
-    margin-right: 15px;
-    -webkit-appearance: none;
-}
-
-.search label {
-    font-size: 1rem;
-    font-family: Lato, 'Helvetica Nueue', Helvetica, Arial, sans-serif;
-    color: #576E75;
-}
-
-.search .formgroup {
-    float: left;
-    width: 33%;
-}
-
-.search .buttons {
-    display: block;
-    width: 33%;
-    float: right;
-    text-align: right;
 }
 
 @media all and (max-width: 700px) {
@@ -690,25 +558,6 @@ md-toolbar-tools.md-button{
     float: right;
 }
 
-.muppet-list .md-button {
-    color: inherit;
-    text-align: left;
-    width: 100%;
-}
-
-.muppet-list .selected {
-    color: #03a9f4;
-}
-
-.face {
-    border-radius: 30px;
-    border: 1px solid #ddd;
-    display: inline-block;
-    margin: 4px 16px;
-    vertical-align: middle;
-    width: 48px;
-}
-
 .content-wrapper {
     position: relative;
 }
@@ -798,7 +647,24 @@ md-list.md-whiteframe-2dp{
     width: 100%
 }
 
+ng-md-icon.add {
+    display: block;
+    width : 2.8rem;
+    height: 2.8rem;
+}
 
+md-button.add{
+    background: #ff9900;
+}
 
+.md-sidenav {
 
+    /* Override from absolute to relative */
+    position: relative;
+
+    height: 100%;
+
+    /* Change to block display */
+    display: block;
+}
 

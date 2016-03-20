@@ -2,6 +2,7 @@
 <div layout="column" class="relative" layout-fill role="main">
     <md-toolbar>
         <div class="md-toolbar-tools">
+            <md-icon md-svg-src='./css/svg/heart-beats.svg'></md-icon>
             <h3>
                 Fit Focus App
             </h3>
@@ -9,6 +10,7 @@
             <md-button href="#/dashboard">Dashboard</md-button>
             <md-button href="#/posts">Top Classes</md-button>
             <md-button href="#/map">Class Location</md-button>
+            <md-button ng-controller="RegistrationController" href="#/login" ng-click="logout()">Logout</md-button>
         </div>
         </md-toolbar>
     </div>
@@ -40,7 +42,7 @@
                     <textarea rows="3" ng-model="ctrl.message"></textarea>
                 </md-input-container>
                 <div layout="row" layout-align="end center">
-                    <md-button ng-click="ctrl.addItem()" class="md-raised md-primary">Add</md-button>
+                    <button type="submit" class="btn" ng-click="ctrl.addItem()">Add</button>
                 </div>
             </form>
         </div>
