@@ -15,7 +15,7 @@
 
 <span flex></span>
 <div ng-controller="dashBoardController" layout="column" style="height:500px;" ng-cloak>
-    <section layout="row" flex="">
+    <section layout="row" flex="" layout-fill style="height: 150%;">
         <md-sidenav layout="column" class="md-sidenav-left md-whiteframe-z2" md-component-id="left"
                     md-is-locked-open="$mdMedia('gt-md')" style="height: 100%;">
             <md-toolbar class="md-tall md-hue-2">
@@ -44,8 +44,8 @@
                 </div>
             </md-list>
         </md-sidenav>
-        <md-content flex id="content">
-            <md-card class="md-card-dashboard">
+        <md-content flex id="content" class="md-dashboard">
+            <md-card layout-fill style="height: 100%;">
                 <md-card-content>
             <div align="center">
                 <!--<md-icon md-svg-icon="{{ul.selected.avatar}}" class="avatar"></md-icon>-->
