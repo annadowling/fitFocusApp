@@ -52,7 +52,7 @@ fitFocusApp.config(['$routeProvider', function ($routeProvider) {
                 } //current Auth
             } //resolve
         }).
-    when('/forum',
+        when('/forum',
         {
             templateUrl: 'views/forum.html',
             controller: 'ForumController',
@@ -61,12 +61,11 @@ fitFocusApp.config(['$routeProvider', function ($routeProvider) {
                     return Authentication.requireAuth();
                 } //current Auth
             } //resolve
-        })
-        .
+        }).
         when('/bookClass',
             {
                 templateUrl: 'views/bookClass.html',
-                controller: 'bookClassController',
+                controller: 'BookClassController',
                 resolve: {
                     currentAuth: function (Authentication) {
                         return Authentication.requireAuth();

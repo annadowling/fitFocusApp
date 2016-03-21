@@ -32,6 +32,6 @@ fitFocusApp.controller('RegistrationController',
       }
     ];
 
-}]); // Controller
+}]);
 
 
