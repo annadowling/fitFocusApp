@@ -65,7 +65,7 @@ fitFocusApp.config(['$routeProvider', function ($routeProvider) {
         when('/bookClass',
             {
                 templateUrl: 'views/bookClass.html',
-                controller: 'BookClassController',
+                controller: 'bookClassController',
                 resolve: {
                     currentAuth: function (Authentication) {
                         return Authentication.requireAuth();
