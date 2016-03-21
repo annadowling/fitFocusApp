@@ -64,9 +64,25 @@ fitFocusApp.controller('bookClassController', ['$scope', function($scope) {
                     booked: false
                 }
             }
+        },
+        saturday: {
+            name: 'Saturday',
+            slots: {
+                900: {
+                    time: '9:00am',
+                    booked: false
+                },
+                110: {
+                    time: '11:00am',
+                    booked: false
+                }
+            }
         }
 
     };
 }]);
+
+
+
 
 

@@ -16,19 +16,23 @@
             <h1>Book a Class</h1>
         </div>
         <div class="row times">
-            <div class="col-xs-4 text-center" ng-repeat="day in days">
+            <div class="col-xs-4" align="center" ng-repeat="day in days" style="display: inline-block; width: 30%;
+  padding-top: 5%; margin-bottom: 5%;">
                 <h2>{{ day.name }}</h2>
+                <br>
                 <div class="time-slot" ng-repeat="slot in day.slots">
-                    <input type="checkbox" id="{{ day.name }}-{{ $index }}" ng-model="slot.booked" ng-disabled="slot.booked">
-                    <label for="{{ day.name }}-{{ $index }}">{{ slot.time }}
-                        <br>
+                    <input type="checkbox" id="{{ day.name }}-{{ $index }}" ng-model="slot.booked"
+                           ng-disabled="slot.booked">
+                    <br>
+                    <label for="{{ day.name }}-{{ $index }}">
+                        {{ slot.time }}
                         <span ng-if="slot.booked">Class Full</span>
                         <span ng-if="!slot.booked">Spaces Available</span>
                     </label>
                 </div>
-
             </div>
-
         </div>
+
     </div>
+</div>
 </div>
