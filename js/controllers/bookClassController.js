@@ -1,4 +1,4 @@
-fitFocusApp.controller('bookClassController', ['$scope', function($scope) {
+fitFocusApp.controller('bookClassController', ['$scope', function ($scope) {
     $scope.days = {
         monday: {
             name: 'Monday',
