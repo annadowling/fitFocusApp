@@ -1,19 +1,17 @@
 #Assignment 1 - AngularJS app.
 
-Name: Anna Dowling
-Student Number: 08453713
++ Name: Anna Dowling
++ Student Number: 08453713
 
 ###Overview.
 ...... A statement of the app concept and objectives (about 1/2 page) ........
 
-
- . . . . . List of user features (excluding user registration and authentication) . . . . 
+### List of user features (excluding user registration and authentication)
  
- + Feature 1
- + Feature 2
- + Feature 3
- + etc
- + etc
+ + Top Classes page with add post and rate post functionality. View by date or top rated classes.
+ + Book a class page to select a class time slot to attend.
+ + User forum for posting messages.
+ + Google Maps location search for finding a class location upon input of directions or general location name.
 
 ###Installation requirements.
 . . . .  List of software used to develop the app . . . . . . . 
@@ -53,11 +51,14 @@ A simple diagram showing the app's component design, in particular controllers a
 
 ###Routing.
 
-. . . . List each route supported and state the associated view . . . . . 
-+ /foos - displays all published foos
-+ /foos/:id - detail view of a particular foo (:id)
-+ etc
-+ etc
++ /login - views/login.html
++ /register - views/register.html
++ /dashboard - views/dashboard.html
++ /posts - views/posts.html
++ /map - views/map.html
++ /forum - views/forum.html
++ /bookClass - views/bookClass.html
++ redirectTo - /login - views/login.html
 
 ###Extra features
 

@@ -1,4 +1,3 @@
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <div layout="column" class="relative" layout-fill role="main">
     <md-toolbar>
         <div class="md-toolbar-tools">
@@ -12,40 +11,41 @@
             <md-button href="#/map">Class Location</md-button>
             <md-button ng-controller="RegistrationController" href="#/login" ng-click="logout()">Logout</md-button>
         </div>
-        </md-toolbar>
-    </div>
+    </md-toolbar>
+</div>
 <div ng-controller="ForumController as ctrl">
     <md-card flex-gt-sm="60" flex-gt-md="100">
-    <md-card-content layout-margin="layout-margin" layout-padding="layout-padding">
-        <div layout="column" layout-align="start center">
-            <h2>Forum Messages</h2>
-            <br>
-            <md-list class="md-whiteframe-2dp">
-                <md-list-item ng-repeat="(id, item) in ctrl.list" class="md-2-line">
-                    <div layout="column" class="md-list-item-text">
-                        <h3 ng-bind="item.name"></h3>
-                        <p ng-bind="item.message"></p>
-                        <ng-md-icon icon="delete" ng-click="ctrl.removeItem(id)" class="material-icons">delete</ng-md-icon>
+        <md-card-content layout-margin="layout-margin" layout-padding="layout-padding">
+            <div layout="column" layout-align="start center">
+                <h2>Forum Messages</h2>
+                <br>
+                <md-list class="md-whiteframe-2dp">
+                    <md-list-item ng-repeat="(id, item) in ctrl.list" class="md-2-line">
+                        <div layout="column" class="md-list-item-text">
+                            <h3 ng-bind="item.name"></h3>
+                            <p ng-bind="item.message"></p>
+                            <ng-md-icon icon="delete" ng-click="ctrl.removeItem(id)" class="material-icons">delete
+                            </ng-md-icon>
+                        </div>
+                    </md-list-item>
+                </md-list>
+            </div>
+            <div layout="column" layout-align="start center">
+                <h2>Add Your Message</h2>
+                <form layout="column">
+                    <md-input-container>
+                        <label>Name</label>
+                        <input type="text" ng-model="ctrl.name"/>
+                    </md-input-container>
+                    <md-input-container>
+                        <label>Message</label>
+                        <textarea rows="3" ng-model="ctrl.message"></textarea>
+                    </md-input-container>
+                    <div layout="row" layout-align="end center">
+                        <button type="submit" class="btn" ng-click="ctrl.addItem()">Add</button>
                     </div>
-                </md-list-item>
-            </md-list>
-        </div>
-        <div layout="column" layout-align="start center">
-            <h2>Add Your Message</h2>
-            <form layout="column">
-                <md-input-container>
-                    <label>Name</label>
-                    <input type="text" ng-model="ctrl.name"/>
-                </md-input-container>
-                <md-input-container>
-                    <label>Message</label>
-                    <textarea rows="3" ng-model="ctrl.message"></textarea>
-                </md-input-container>
-                <div layout="row" layout-align="end center">
-                    <button type="submit" class="btn" ng-click="ctrl.addItem()">Add</button>
-                </div>
-            </form>
-        </div>
-    </md-card-content>
-        </md-card>
+                </form>
+            </div>
+        </md-card-content>
+    </md-card>
 </div>

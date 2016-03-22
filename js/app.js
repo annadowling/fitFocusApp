@@ -2,8 +2,8 @@
  * Created by annadowling on 17/03/2016.
  *
  * This is the central application javascript file which primarily controls the routing of pages and their associated controllers to the DOM.
- * It also handles the application declaration along with the core modules used within the application.
- * These modules include ngRoute for routing, firebase for data storage,
+ * It also handles the application declaration along with the core module dependencies used within the application.
+ * These dependencies include ngRoute for routing, firebase for data storage,
  * ngMaterial for google design structures, ngMdIcons for material icon standards
  * and ngMessages for material Message display.
  */
