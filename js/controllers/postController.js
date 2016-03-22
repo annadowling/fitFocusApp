@@ -1,5 +1,8 @@
 /**
  * Created by annadowling on 17/03/2016.
+ * The purpose of this controller is to handle the data created in PostsService.
+ * This includes fetching the posts to the page, incrementing upvotes on posts
+ * and controlling the mdDialog directive for adding posts to the array of posts displayed to the user.
  */
 
 fitFocusApp.controller('PostsController', ['$scope', 'PostsService', '$mdDialog',
@@ -16,7 +19,7 @@ fitFocusApp.controller('PostsController', ['$scope', 'PostsService', '$mdDialog'
                 })
                 .then(function (response) {
                     console.log(response);
-                    $scope.posts.push(response);
+                    $scope.posts.push(response); // push the response(the filled out post field from mdDialog) to the list of posts
                 }, function () {
                     $scope.status = 'You cancelled the dialog.';
                 });
@@ -25,7 +28,7 @@ fitFocusApp.controller('PostsController', ['$scope', 'PostsService', '$mdDialog'
 
 function DialogController($scope, $mdDialog) {
     $scope.newPost = {};
-    $scope.addPost = function (answer) {
+    $scope.addPost = function (answer) { // add the post to the page and then hide the mdDialog pop up form.
         $mdDialog.hide(answer);
     };
 };

@@ -1,5 +1,7 @@
 /**
  * Created by annadowling on 17/03/2016.
+ * This service provides the data model for the list of posts which are served to the posts.html page.
+ * this data is handled by the postController in order to add new posts in this format and display the below posts to the user.
  */
 
 fitFocusApp.factory('PostsService', [function(){
@@ -54,7 +56,7 @@ fitFocusApp.factory('PostsService', [function(){
         }
     ];
     var api = {
-        getPosts : function() {
+        getPosts : function() { // returns the posts to the html page
             return posts
         },
         getPost : function(id) {

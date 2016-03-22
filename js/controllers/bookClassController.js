@@ -1,3 +1,9 @@
+/**
+ * Created by annadowling on 17/03/2016.
+ * This controller handles the returning of the days model setup to the current scope of the bookClass.html page.
+ * This displays the list of days and their time slots for class bookings.
+ */
+
 fitFocusApp.controller('bookClassController', ['$scope', function ($scope) {
     $scope.days = {
         monday: {
