@@ -95,8 +95,8 @@ A simple diagram showing the app's component design, in particular controllers a
 The application contains functionality to register and authenticate a user.
 
 This information is stored using firebase. This stores the users firstname, lastname, email and password upon registration to the application via the registration view.
-Once the user has registered they can then login via the login view. the applcication cannot be accessed without user registration and login. If a user trys to access internal pages without logging in
-they will be redirected to the login view. Logout functionality is also in place on each page. once the user clicks the login button they are re-directed to the user login view.
+Once the user has registered they can then login via the login view. The application cannot be accessed without user registration and login. If a user trys to access internal pages without logging in
+they will be redirected to the login view. Logout functionality is also in place on each page. Once the user clicks the logout button they are re-directed to the user login view.
 If the user then tries to access an internal login page after logging out, they will be denied access and redirected to the login view to prompt them to log in.
 
 ### Independent learning
