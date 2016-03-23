@@ -62,11 +62,7 @@ The map also has zoom functionality.
 
 ###Data Model Design.
 
-Diagram of app's data model (see example below) AND/OR a sample of the test data used (JSON or equivalent).
-
 ![][image1]
-
-Use meaningful sample data. Briefly explain any non-trivial issues.
 
 ###App Design.
 
@@ -119,7 +115,7 @@ If the user then tries to access an internal login page after logging out, they 
 + Google Maps api v3 https://developers.google.com/maps/documentation/javascript/tutorial
 + lodash https://lodash.com/
 
-[image1]: ./model.png
+[image1]: ./datamodel.png
 [image2]: ./design.png
 [image3]: ./dashboardview.png
 [image4]: ./postsview.png
