@@ -4,7 +4,35 @@
 + Student Number: 08453713
 
 ###Overview.
-...... A statement of the app concept and objectives (about 1/2 page) ........
+This application is called Fit Focus. The concept of this application is to provide a facility for a user to find and/or rate fitness classes in their area,
+in order to find a class which suits their needs.
+The main aim of this application is to provide a way in which users can create a community for rating fitness classes. This is something which was inspired by
+a lack of ratings on individual classes provided in my own area, which I was searching for online when trying to decide on classes to attend.
+After attending classes which I did not enjoy and did not suit my needs, I thought that there may be a need for an application of this kind, to aid the decision making process for 
+attending fitness classes. Health and fitness are quite popular topics in the media presently, with many gyms and personal trainers popping up which are mainly recommended based on word of mouth.
+This application acts as a repository for fitness enthusiasts to make an informed decision on a class to attend.
+
+This application makes use of the Angular Material design library to implement some of the core concepts of google app design and styling. Angular Material is the Angular implementation of 
+Google's Material design standards and specification. These ui-components and directives give the application a clean and structured look and feel to the user.
+The elements used would also be quite familiar to many users who have experience using any google applications or similar looking applications such as Facebook.
+This provides a sense of familiarity to the user when navigating through the application.
+
+Main Features:
+Fit Focus provides a class ranking facility for adding posts and upvoting classes which the user wants to vote for.
+This posts page can be viewed based on date added and also based on top rated classes. The user can click on the plus icon on the right hand side of the screen in order to add a class rating post
+to the list. This then gets added to the list of posts when the user clicks post. i fthey wish to cancel adding their post, they can press the esc button on the keyboard, which will hide the dialog pop up.
+
+This page also provides a link to a class booking facility, which allows the user to select a class time slot from the GUI interface. These time slots are currently hard-coded and are not stored,
+with the intention of having these selections stored in the database for the second assignment. When the user clicks on a time slot the class the button then changes from green to red and displays
+the text "Class full" to the user, in order to inform them that they have booked the class. This is the first stage of this functionality currently.
+
+The application contains a forum, which messages posts using firebase. This acts as an area where users can submit questions which can then be answered by other users to gain further information.
+this posts are saved for firebase and will all load regardless of who is logged in to the application. Users can also delete these posts.
+
+The application also contains a page for locating classes via google maps. this page requires the user to enter partial or full direction details.
+This then returns location suggestions to the user which can be selected in the dropdown. 
+Once a location is selected the map will fly to that address. The map can be viewed as satellite theme or terrain theme and includes markers and the drop in user for street view.
+The map also has zoom functionality.
 
 ### List of user features (excluding user registration and authentication)
  
@@ -13,21 +41,25 @@
  + User forum for posting messages.
  + Google Maps location search for finding a class location upon input of directions or general location name.
 
-###Installation requirements.
-. . . .  List of software used to develop the app . . . . . . . 
-+ angular
-+ angular-material
-+ angular-material css
-+ angular-route
-+ angular-animate
-+ angular-aria
+### Installation requirements.
++ angular v1.5.2
++ angular-material v1.1.0
++ angular-material-css v1.0.6
++ angular-route v1.5.3
++ angular-animate v1.5.3
++ angular-aria v1.5.3
 + maps-api-v3
-+ firebase 2.2.4
-+ angularfire 1.1.3
-+ lodash 4.6.1
++ firebase v2.4.1
++ angularfire v1.1.4
++ lodash v4.6.1
 
 
-. . . . . . Also, explain (to a third party) what steps one must take to run your app after cloning it from the repository, e.g. any non-standard software installation ; any environment setup; how to start app; where to view app in browser . . . . . . . 
+### Set Up
++ git clone or download the zip of the application from this address: https://github.com/annadowling/fitFocusApp.git 
++ Install http-server on your local machine using: npm install http-server -g or if you wish to install this only within the application dir use npm install http-server with the application folder.
++ To run the application, navigate to the directory and run te command http-server.
++ If you wish to stop the server press ctrl + c
+
 
 ###Data Model Design.
 
@@ -61,14 +93,15 @@ A simple diagram showing the app's component design, in particular controllers a
 + redirectTo - /login - views/login.html
 
 ###Extra features
+The application contains fucntionality to register, and authenticate a user.
 
-. . . . . Briefly explain any non-standard features, functional or non-functional (e.g. user registration, authentication) developed for the app . . . . . .  
+This information is stored using firebase.
 
 ###Independent learning.
 
 + Angular Material Design: https://material.angularjs.org
 + Firebase: https://fitfocusapp.firebaseio.com/
-+ Google Maps api
++ Google Maps api v3 https://developers.google.com/maps/documentation/javascript/tutorial
 
 [image1]: ./model.png
 [image2]: ./design.png
