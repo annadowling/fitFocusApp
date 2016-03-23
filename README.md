@@ -87,7 +87,7 @@ A simple diagram showing the app's component design, in particular controllers a
 <br>
 <br>
 <b>Class Location Page</b>
-![][image5]
+![][image6]
 <br>
 
 ### Routing
