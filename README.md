@@ -76,14 +76,15 @@ A simple diagram showing the app's component design, in particular controllers a
 
 ### UI Design.
 
-<b>Dashboard Greeting Page for user upon login</b>
+<b>Dashboard Greeting Page</b>
 ![][image3]
-
+<br>
 <b>Top Classes Page</b>
 ![][image4]
-
+<br>
 <b>Forum Page</b>
 ![][image5]
+<br>
 
 ### Routing
 
