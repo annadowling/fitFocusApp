@@ -78,6 +78,7 @@ A simple diagram showing the app's component design, in particular controllers a
 
 . . . . . Screenshots of app's views (see example below) with appropriate captions (excluding user regeneration and login views) . . . . . . . 
 
+Dashboard Greeting Page for user upon login:
 ![][image3]
 
 ### Routing
@@ -108,4 +109,4 @@ If the user then tries to access an internal login page after logging out, they 
 
 [image1]: ./model.png
 [image2]: ./design.png
-[image3]: ./screen.png
+[image3]: ./dashboardview.png
