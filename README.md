@@ -79,6 +79,9 @@ A simple diagram showing the app's component design, in particular controllers a
 <b>Dashboard Greeting Page for user upon login:</b>
 ![][image3]
 
+<b>Top Classes page to add and rate posts on fitness classes</b>
+![][image4]
+
 ### Routing
 
 + /login - views/login.html
@@ -108,3 +111,4 @@ If the user then tries to access an internal login page after logging out, they 
 [image1]: ./model.png
 [image2]: ./design.png
 [image3]: ./dashboardview.png
+[image4]: ./postsview.png
