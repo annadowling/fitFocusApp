@@ -74,11 +74,9 @@ A simple diagram showing the app's component design, in particular controllers a
 
 ![][image2]
 
-###UI Design.
+### UI Design.
 
-. . . . . Screenshots of app's views (see example below) with appropriate captions (excluding user regeneration and login views) . . . . . . . 
-
-Dashboard Greeting Page for user upon login:
+<b>Dashboard Greeting Page for user upon login:</b>
 ![][image3]
 
 ### Routing
