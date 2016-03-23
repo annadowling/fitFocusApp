@@ -116,7 +116,7 @@ If the user then tries to access an internal login page after logging out, they 
 + lodash https://lodash.com/
 
 [image1]: ./datamodel.png
-[image2]: ./design.png
+[image2]: ./appdesign.png
 [image3]: ./dashboardview.png
 [image4]: ./postsview.png
 [image5]: ./forumview.png
