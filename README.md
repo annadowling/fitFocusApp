@@ -89,6 +89,9 @@ A simple diagram showing the app's component design, in particular controllers a
 <b>Class Location Page</b>
 ![][image6]
 <br>
+<b>Book Class Page</b>
+![][image7]
+<br>
 
 ### Routing
 
@@ -122,4 +125,6 @@ If the user then tries to access an internal login page after logging out, they 
 [image4]: ./postsview.png
 [image5]: ./forumview.png
 [image6]: ./mapview.png
+[image7]: ./bookclassview.png
+
 
