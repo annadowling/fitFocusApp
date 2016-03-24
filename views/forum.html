@@ -1,6 +1,6 @@
 <div flex layout="column" class="relative" layout-fill role="main">
-    <md-toolbar layout-xs="column">
-        <div class="md-toolbar-tools">
+    <md-toolbar>
+        <div class="md-toolbar-tools" layout="row" layout-wrap>
             <md-icon md-svg-src='./css/svg/heart-beats.svg'></md-icon>
             <h3>
                 Fit Focus App
@@ -16,7 +16,7 @@
 <div ng-controller="ForumController as ctrl">
     <md-card flex-gt-sm="60" flex-gt-md="100">
         <md-card-content layout-margin="layout-margin" layout-padding="layout-padding">
-            <div layout="column" layout-align="start center" layout-sm="=column">
+            <div layout="column" layout-align="start center" layout-sm="=column" layout-wrap>
                 <h2>Forum Messages</h2>
                 <br>
                 <md-list class="md-whiteframe-2dp">
