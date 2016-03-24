@@ -1,5 +1,5 @@
 <md-toolbar>
-    <div class="md-toolbar-tools">
+    <div class="md-toolbar-tools" layout-wrap layout="row">
         <md-icon md-svg-src='./css/svg/heart-beats.svg'></md-icon>
         <h3>Fit Focus App</h3>
         <span flex></span>
@@ -10,7 +10,7 @@
         <md-button ng-controller="RegistrationController" href="#/login" ng-click="logout()">Logout</md-button>
     </div>
 </md-toolbar>
-<div id="wrapper">
+<div id="wrapper" layout-wrap layout="row">
     <div class="container" ng-controller="bookClassController">
         <div align="center">
             <h1>Book a Class</h1>

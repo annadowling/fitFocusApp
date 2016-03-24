@@ -1,6 +1,7 @@
-<div flex layout="column" class="relative" layout-fill role="main">
+<!--<div flex layout="column" class="relative" layout-fill role="main">-->
+<span>
     <md-toolbar>
-        <div class="md-toolbar-tools" layout="row" layout-wrap>
+        <div class="md-toolbar-tools" layout-wrap layout="row">
             <md-icon md-svg-src='./css/svg/heart-beats.svg'></md-icon>
             <h3>
                 Fit Focus App
@@ -12,7 +13,7 @@
             <md-button ng-controller="RegistrationController" href="#/login" ng-click="logout()">Logout</md-button>
         </div>
     </md-toolbar>
-</div>
+<!--</div>-->
 <div ng-controller="ForumController as ctrl">
     <md-card flex-gt-sm="60" flex-gt-md="100">
         <md-card-content layout-margin="layout-margin" layout-padding="layout-padding">
@@ -49,3 +50,4 @@
         </md-card-content>
     </md-card>
 </div>
+    </span>
