@@ -1,6 +1,5 @@
-<!--<div flex layout="column" class="relative" layout-fill role="main">-->
 <span>
-    <md-toolbar>
+    <md-toolbar style="height: 70px;">
         <div class="md-toolbar-tools" layout-wrap layout="row">
             <md-icon md-svg-src='./css/svg/heart-beats.svg'></md-icon>
             <h3>
@@ -13,9 +12,9 @@
             <md-button ng-controller="RegistrationController" href="#/login" ng-click="logout()">Logout</md-button>
         </div>
     </md-toolbar>
-<!--</div>-->
-<div ng-controller="ForumController as ctrl">
-    <md-card flex-gt-sm="60" flex-gt-md="100">
+    <md-content layout-padding ng-controller="ForumController as ctrl">
+<!--<div ng-controller="ForumController as ctrl">-->
+    <md-card flex-gt-sm="50" flex-gt-md="100">
         <md-card-content layout-margin="layout-margin" layout-padding="layout-padding">
             <div layout="column" layout-align="start center" layout-sm="=column" layout-wrap>
                 <h2>Forum Messages</h2>
@@ -49,5 +48,5 @@
             </div>
         </md-card-content>
     </md-card>
-</div>
+<</md-content>
     </span>

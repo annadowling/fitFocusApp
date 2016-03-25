@@ -1,4 +1,4 @@
-<md-toolbar>
+<md-toolbar style="height: 70px;">
     <div class="md-toolbar-tools" layout-wrap layout="row">
         <md-icon md-svg-src='./css/svg/heart-beats.svg'></md-icon>
         <h3>Fit Focus App</h3>
@@ -11,23 +11,23 @@
     </div>
 </md-toolbar>
 <div id="wrapper" layout-wrap layout="row">
-    <div class="container" ng-controller="bookClassController">
+    <div class="container" ng-controller="bookClassController" layout-wrap>
         <div align="center">
             <h1>Book a Class</h1>
         </div>
-        <div class="row times">
+        <div class="row times" layout="row" layout-wrap>
             <div class="col-xs-4" align="center" ng-repeat="day in days" style="display: inline-block; width: 30%;
-  padding-top: 5%; margin-bottom: 5%;">
+  padding-top: 5%; margin-bottom: 5%;" layout="row" layout-wrap>
                 <h2>{{ day.name }}</h2>
                 <br>
-                <div class="time-slot" ng-repeat="slot in day.slots">
+                <div class="time-slot" ng-repeat="slot in day.slots" layout-wrap>
                     <input type="checkbox" id="{{ day.name }}-{{ $index }}" ng-model="slot.booked"
                            ng-disabled="slot.booked">
                     <br>
                     <label for="{{ day.name }}-{{ $index }}">
                         {{ slot.time }}
-                        <span ng-if="slot.booked">Class Full</span>
-                        <span ng-if="!slot.booked">Spaces Available</span>
+                        <span flex ng-if="slot.booked">Class Full</span>
+                        <span flex ng-if="!slot.booked">Spaces Available</span>
                     </label>
                 </div>
             </div>
